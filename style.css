@@ -1,0 +1,58 @@
+body {
+      margin: 0;
+      background-image: url("/pexels-pixabay-209831.jpg");
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .container {
+      background: rgba(0,0,0,0.6);
+      padding: 20px;
+      border-radius: 15px;
+      max-width: 500px;
+      margin: auto;
+      z-index: 10;
+      position: relative;
+    }
+    input, button {
+      padding: 10px;
+      margin: 5px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+    }
+    button { cursor: pointer; }
+    #forecast {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 20px;
+    }
+    .day {
+      text-align: center;
+    }
+    .day img {
+      width: 50px;
+    }
+    /* Animated Clouds */
+    .cloud {
+      position: absolute;
+      top: 50px;
+      background: url('https://i.ibb.co/Qm7pK8c/cloud.png') no-repeat;
+      background-size: contain;
+      width: 200px;
+      height: 100px;
+      opacity: 0.8;
+      animation: moveClouds 60s linear infinite;
+    }
+    @keyframes moveClouds {
+      0% { left: -250px; }
+      100% { left: 110%; }
+    }
